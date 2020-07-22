@@ -1,0 +1,103 @@
+
+.profile-circle-img{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.event-show-container{
+     width: 95%;
+    border: 1px solid silver;
+    border-radius: 5px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+
+    .first-div
+    {
+        display: flex;
+        flex-direction: row;
+        padding : .6rem;
+        border-bottom: 1px solid rgba(190, 190, 190, 0.932);
+
+        div
+        {
+            margin: .5rem;
+            flex-grow: 1;
+        }
+
+        img
+        {
+            @extend .profile-circle-img;
+            width: 5rem;
+        }
+
+        .deleteIcon
+        {
+            flex-grow: 20;
+            text-align: end;
+        }
+
+
+    }
+    .middle-div
+    {
+        @extend .first-div;
+
+        .date
+        {
+            margin-right:.5rem;
+        }
+
+    }
+
+    .attendee {
+        @extend .first-div;
+        // border-bottom: 1px solid rgba(190, 190, 190, 0.932);
+        
+    }
+
+    .last-div
+    {
+        @extend .first-div;
+        justify-content: space-between;
+        border-bottom: none;
+
+        div{
+            flex-grow: 0;
+        }
+
+        button
+        {
+            background: rgb(7, 100, 143);
+            padding: .4rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            border: none;
+            color: rgba(255, 255, 255, 0.568);
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+        }
+
+        button:focus
+        {
+            outline: none;
+            border: none;
+            background: rgba(7, 100, 143, 0.808);
+        }
+    }
+}
+
+
+

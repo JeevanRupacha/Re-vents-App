@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  
+  .nav-container{
+      display: flex;
+      justify-content: space-between;
+      background: linear-gradient(to right,rgba(3, 3, 85, 0.87),rgb(18, 142, 199));
+      align-items: center;
+      padding: 1rem;
+
+
+      button{
+        align-items: center;
+        margin-left: 1rem;
+        padding: .5em;
+        text-align: center;
+        border: 2px solid rgba(233, 226, 226, 0.507);
+        background: transparent;
+        font-weight: bold;
+        color: #fff;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+}
+
+  #create-btn-id{
+    margin-left: 3rem;
+  }
+
+button:focus{
+    outline: none;
+    border: 2px solid #fff;
+
+}
+
+
+    .logo img {
+        height: 10vh;
+        width: 10vh;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .left-nav{
+        display: flex;
+        align-items: center;
+
+        div{
+            margin-left: 1.5em;
+            color: #fff;
+        }
+
+        #revents, #events{
+         cursor: pointer;
+        }
+
+        #create-btn-id{
+            background-color: rgb(7, 136, 65);
+            cursor: pointer;
+        }
+    }
+
+    .right-nav{
+        padding-right: 10vw;
+    }
+
+  }
+
+  .main-container
+  {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+
+    .left-cont
+    {
+      width: 60vw;
+      padding: 2rem;
+      padding-right: 0;
+      background: rgba(185, 180, 180, 0.534);
+    }
+
+    .right-cont
+    {
+      @extend .left-cont;
+      width: 40vw;
+      padding-right: 2rem;
+    }
+  }
+
+  //Home page Container 
+  .home-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+
+  
+  
+  
