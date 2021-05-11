@@ -1,7 +1,7 @@
 
 import React from 'react'
 import { Menu, Image, Dropdown } from 'semantic-ui-react'
-import { Link } from 'react-router-dom'
+import { Link ,NavLink} from 'react-router-dom'
 
 
 const SignoutMenu = (props) => {
@@ -17,7 +17,7 @@ const SignoutMenu = (props) => {
                       <Dropdown.Item text="My Events" icon="calendar" />
                       <Dropdown.Item text="My Network" icon="users" />
                       <Dropdown.Item text="My Profile" icon="user" />
-                      <Dropdown.Item as={Link} to="/setting" text="Settings" icon="settings" />
+                      <Dropdown.Item as={NavLink} to="/setting" text="Settings" icon="settings" />
                       <Dropdown.Item text="Sign Out" onClick={props.handleSignout} icon="power" />
                     </Dropdown.Menu>
                   </Dropdown>

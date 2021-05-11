@@ -1,13 +1,13 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
-import EventDashboard from '../../features/events/EventDashboard/EventDashboard'
-import HomePage from '../../home/HomePage'
-import EventDetailedPage from '../../features/events/EventDetailed/EventDetailed'
-import UserDashboard from '../../users/UsersDashboard/UsersDashboard'
-import UserDetailed from '../../users/UserDetailed/UserDetailedPage'
-import Setting from '../../users/Settings/SettingDashboardPage'
-import CreateForm from '../../features/events/EventForm/EventForm'
-import NavBar from '../../nav/navBar/navBar'
+import EventDashboard from '../../app/features/events/EventDashboard/EventDashboard'
+import HomePage from '../../app/home/HomePage'
+import EventDetailedPage from '../../app/features/events/EventDetailed/EventDetailed'
+import UserDashboard from '../../app/users/UsersDashboard/UsersDashboard'
+import UserDetailed from '../../app/users/UserDetailed/UserDetailedPage'
+import Setting from '../../app/users/Settings/SettingDashboardPage'
+import CreateForm from '../../app/features/events/EventForm/EventForm'
+import NavBar from '../../app/nav/navBar/navBar'
 
 
 
